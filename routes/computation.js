@@ -8,24 +8,24 @@ router.get('/', function(req, res, next) {
     var rand = Math.random();
     console.log(req.query.x);
     num = req.query.x;
-//   res.render('mydata', { title: 'Praveen Babu Narni' });
+//   res.render('mydata', { title: 'Rama Krishna Reddy Boggula' });
 x =3
 //  req.params()
 if(x == undefined){
     x=rand;
 }
 
-let cos = Math.acosh(x);
-let log = Math.log1p(x);
-let tab = Math.tan(x);
-let sq = Math.sqrt(x);
+let cos = Math.abs(x);
+let log = Math.acos(x);
+let tab = Math.sin(x);
+let sq = Math.sinh(x);
 
 res.render('computation',{
     title:'computation',
-    values:'Math.acosh() applied to '+x+' is '+cos,
-    value1:'Math.log1p() applied to '+x+' is '+log,
-    value2:'Math.tan() applied to '+x+' is '+tab, 
-    values3:'Math.sqrt() applied to '+x+' is '+sq
+    values:'Math.abs() applied to '+x+' is '+cos,
+    value1:'Math.acos() applied to '+x+' is '+log,
+    value2:'Math.sin() applied to '+x+' is '+tab, 
+    values3:'Math.sinh() applied to '+x+' is '+sq
 });
 });
 
