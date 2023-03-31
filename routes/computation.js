@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
     console.log(req.query.x);
     num = req.query.x;
 //   res.render('mydata', { title: 'Rama Krishna Reddy Boggula' });
-x =3
+x =10
 //  req.params()
 if(x == undefined){
     x=rand;
@@ -28,7 +28,4 @@ res.render('computation',{
     values3:'Math.sinh() applied to '+x+' is '+sq
 });
 });
-
-
-
 module.exports = router;
